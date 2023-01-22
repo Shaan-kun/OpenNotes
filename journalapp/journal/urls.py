@@ -1,9 +1,10 @@
 from django.urls import path
-from . import views
+from .views import *
 
 urlpatterns = [
-    path('journal/list', views.JournalListView.as_view(), name="journallist"),
-    path('journal/journalcreate', views.JournalCreateView.as_view(), name="createjournal"),
-    path('journal/journalupdate/<pk>', views.JournalUpdateView.as_view(), name="updatejournal"),
-    path('journal/journaldelete/<pk>', views.JournalDeleteView.as_view(), name="deletejournal"),
+    path('', JournalListView.as_view(), name='home'),
+    path('journal/list', JournalListView.as_view(), name="journal-list"),
+    path('journal/journal-create', JournalCreateView.as_view(), name="create-journal"),
+    path('journal/journal-update/<pk>', JournalUpdateView.as_view(), name="update-journal"),
+    path('journal/journal-delete/<pk>', JournalDeleteView.as_view(), name="delete-journal"),
 ]
