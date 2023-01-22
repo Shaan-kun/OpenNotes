@@ -1,8 +1,8 @@
 {% extends "journal/base.html" %}
 {% load humanize %}
 {% block content %}
-<h2>ALL JOURNALS</h2>
-<a href="{% url 'create-journal' %}"><button class="btn btn-primary" type="submit">Add a New Journal</button></a>
+<h2>Все заметки</h2>
+<a href="{% url 'create-journal' %}"><button class="btn btn-primary" type="submit">Добавить новую заметку</button></a>
 <div>
    {% for journal in journal_list %}
    <div class="list-group">
