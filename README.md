@@ -8,4 +8,3 @@
 * создать файл миграции: python manage.py makemigrations
 * провести миграцию: python manage.py migrate
 * запустить сервер: python manage.py runserver
-
