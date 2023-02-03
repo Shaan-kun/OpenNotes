@@ -1,5 +1,4 @@
 from django.db import models
-from django.urls import reverse
 
 
 # В этой части создаем модели.

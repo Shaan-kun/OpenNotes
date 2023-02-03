@@ -9,3 +9,4 @@
 * провести миграцию: python manage.py migrate
 * запустить сервер: python manage.py runserver
 
+## Дополнительно
